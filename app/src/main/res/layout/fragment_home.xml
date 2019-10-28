@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="165sp"
+            android:text="@string/temp"
+            android:textColor="#827717"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/humi"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="27dp"
+            android:text="@string/humi"
+            android:textColor="#827717"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/soil"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/humi"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="26dp"
+            android:text="@string/soil"
+            android:textColor="#827717"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="164sp"
+            android:layout_toEndOf="@+id/temp"
+            android:src="@drawable/ic_arrow_forward" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/img1"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@+id/humi"
+            android:src="@drawable/ic_arrow_forward" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/img2"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="23dp"
+            android:layout_toEndOf="@+id/soil"
+            android:src="@drawable/ic_arrow_forward" />
+
+
+        <EditText
+            android:id="@+id/edit_temp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/img1"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="17dp"/>
+
+        <EditText
+            android:id="@+id/edit_humi"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/edit_temp"
+            android:layout_toEndOf="@+id/img2"
+            android:layout_marginLeft="30dp"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/edit_soil"
+            android:layout_width="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_humi"
+            android:layout_toEndOf="@+id/img3"
+            android:layout_marginLeft="30dp"
+            android:textSize="17dp"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
